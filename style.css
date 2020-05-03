@@ -1,0 +1,95 @@
+body{
+    color: white;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+#content{
+    background-color: rgb(31, 31, 31);
+    padding: 30px 100px;
+    animation: myk 0.5s;
+    animation-fill-mode: forwards;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+
+@keyframes myk{
+    0%
+    {opacity: 0;}
+    100%
+     {opacity: 1;}
+  }
+
+#content h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-size: 4em;
+}
+#content p{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px 0px 10px 0px;
+}
+#content span{
+    color:#40ac48;
+    font-weight: 800;
+    text-decoration: underline;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+form input{
+    border:none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 27px;
+}
+form input:focus{
+    outline: none;
+    border: none;
+}
+.formMessage{
+    display: none;
+    margin-top: -15px;
+    font-family: 'Catamaran', sans-serif;
+    color: yellow;
+}
+#lastRow{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5px;
+}
+.checkbox{
+    font-family: 'Roboto';
+    font-weight: 700;
+    color:  rgb(31, 31, 31);
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.8);
+}
+
+button{
+    font-family: 'Roboto';
+    font-size: 34px;
+    font-weight: 700;
+    color: rgb(31, 31, 31);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.8);
+}
+
+button:hover{
+    background-color: black;
+    color:#40ac48;
+    outline: none;
+}

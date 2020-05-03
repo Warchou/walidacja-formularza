@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="checkboxStyle.css">
+        <title>Warchou - signin</title>
+        <link rel="icon" href="img/ico.png">
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+            <h1>Hi im Warchou</h1>
+            <p>Please fill this form to <span> sign in</span></p>
+            <form>
+                <input placeholder="name" name="name" type="text">
+                <input placeholder="forname" name="forname" type="text">
+
+                <div class="formMessage" name="emailmessage">That's not a valid e-mail</div>
+                <input placeholder="email" name="email" type="email">
+                
+                <div class="formMessage" name="pass1message">Password is missing:</div>
+                <input value="" placeholder="password" name="password1" type="password">
+
+                <div class="formMessage" name="pass2message">Passwords don't mach</div>
+                <input value="" placeholder="password" name="password2" type="password">
+
+                <div id="lastRow">
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox"/>
+                        <label for="checkboxG1" class="css-label">Terms of service</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkboxG2" id="checkboxG2" class="css-checkbox" />
+                        <label for="checkboxG2" class="css-label">reCAPTCHA</label>
+                    </div>
+                    <button name="submit" type="submit">Send in!</button>
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
